@@ -39,6 +39,11 @@ docker run -d -p  8000:8000 imageapp
 - Go to http://0.0.0.0:8000/
 ![alt text](https://github.com/xjhee/Shopify-Image-Repository/blob/master/images/app-homepage.png)
 
+#### Search product based on product name
+- Go to http://0.0.0.0:8000/search
+- Input the name of product you want to search
+- Click on submit buttom
+![alt text](https://github.com/xjhee/Shopify-Image-Repository/blob/master/images/app-search.png)
 
 #### Add product to database
 - Go to http://0.0.0.0:8000/add
