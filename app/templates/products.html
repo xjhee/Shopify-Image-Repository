@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Image Repository Homepage</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    </head>
+
+    <body>
+        <a href="/">Main page</a> <br>
+        <br>
+        <p><b>Congratulations Dear customer</b>, you are chosen as a lucky bird for Dragon Buffet's lottery compaign!</p>
+        <p>You have won a UNLIMITED coupons which can only be spent here at Dragon Buffet. Please feel free to add food into your basket :)</p>
+        <p>Warnings: You have bought ${{spent}} in products so far!</p>
+        <br>
+        <h2 style="text-align:center">Table of avaliable products</h2>
+        <div class="ui container" style="overflow-y:auto;white-space:nowrap;">
+            <table class="ui celled table">
+                <thead>
+                    <td>Id</td>
+                    <td>Name</td>
+                    <td>Price</td>
+                    <td>Stock</td>
+                    <td>Image</td>
+                    <td>Buy option</td>
+                </thead>
+                <tbody>
+                    {% for product in products %}
+                    <tr>
+                        <td>{{product.id}}</td>
+                        <td>{{product.name}}</td>
+                        <td>{{product.price}}</td>
+                        <td>{{product.stock}}</td>
+                        <td><img src="{{url_for('static', path=product.photo)}}" width="300" height="300"/></td>
+                        <td><a href='/purchase/{{product.id}}'>BUY</button></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+    </body>
+</html>

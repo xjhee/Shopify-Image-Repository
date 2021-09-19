@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Search products</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+    </head>
+    <body>
+        <a href="/">Main page</a> <br>
+        <h2 style="text-align:center">Search products based on name</h2>
+        <div class="wrapper" align="center">
+        <form action="/search" method="post" class="form" enctype="multipart/form-data">
+            <label id = "name"> 
+              <input type="text" name="name" placeholder="name">
+            </label>
+            <input  type="submit" name="submit" value="submit"></input>
+        </form>
+        </div>
+    </body>
+</html>
