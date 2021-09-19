@@ -35,6 +35,11 @@ docker run -d -p  8000:8000 imageapp
 ```
 
 ### How to test the appliation
+#### Homepage
+- Go to http://0.0.0.0:8000/
+![alt text](https://github.com/xjhee/Shopify-Image-Repository/blob/master/images/app-homepage.png)
+
+
 #### Add product to database
 - Go to http://0.0.0.0:8000/add
 - Input id, name, price, stock, file (png file preferred)
